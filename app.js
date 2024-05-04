@@ -11,8 +11,8 @@ const session = require('express-session');
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Shun0402&',
-    database: 'soukai'
+    password: '自分の設定したパスワードでご利用ください',
+    database: '自分で作成したデータベースをご利用ください'
 });
 //sessionの利用に必要な呪文
 app.use(

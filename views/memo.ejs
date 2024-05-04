@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>発言投稿システム</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body class="memo-back">
+        <div class="memo-infoname">
+            <span class="">議案名:<%= discussions.billname %></span>
+            <span class=""><%= discussions.pgrade %>年</span>
+            <span class=""><%= discussions.pkind %></span>
+            <span class="">名前<%= discussions.pname %></span>            
+        </div>
+        <% discussions.forEach((discuss) => { %>
+        <div class="memo-add">
+            <div class="memo-addinfo">
+                学年：<%= discuss.rgrade %>
+                類：<%= discuss.rkind %>
+                名前：<%= discuss.rname %>
+            </div>
+            <div class="memo-addwrite"><%= discuss.rcontent %></div>
+        </div>
+        <% }) %>
+        <a href="/list">戻る</a>
+    </body>
+</html>

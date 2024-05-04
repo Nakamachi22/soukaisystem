@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <main class="list">
+            <div class="board">
+                <p>黒板</p>
+                <ul>
+                <li><a class="memo" href="/memo">黒板:画面表示</a></li>
+                <li><a class="write" href="/write">黒板:発言投稿システム</a></li>
+                <li><a class="controlwrite" href="/controlwrite">黒板(頭用)：発言投稿管理</a></li>
+                </ul>
+            </div>
+            <div class="concie">
+                <p class="">受付</p>
+                <ul>
+                    <li>当日受付用</li>
+                    <li>打ち込み用</li>
+                </ul>
+            </div>
+            <div class="system">
+                <p>システム</p>
+                 <ul>
+                    <li><a href=/memo>表示</a></li>
+                    <li><a href=/enterbill>議案入力</a></li>
+                    <li>制服執行委員長</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>

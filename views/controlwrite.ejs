@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>発言投稿管理</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <div class="">
+            <ul>
+                <li><a href="/choosebills">審議する議案</a></li>
+                <li><a href="#">採決</a></li>
+                <li><a href="#">動議</a></li>
+            </ul>
+        </div>
+        <div class="control">
+            <% discussions.forEach((discuss) => { %>
+                <div class="controlscreen">
+                    <div class="controlinfo">学年: <%= discuss.rgrade %></div>
+                    <div class="controlinfo">類: <%= discuss.rkind %></div>
+                    <div class="controlinfo">発言者: <%= discuss.rname %></div>
+                    <div class="controlcontent"><%= discuss.rcontent %></div>
+                    <div class="controlcontent">
+                        <form action="/delete/<%= discuss.id%>" method="post">
+                            <input type="submit" value="削除">
+                        </form>
+                    </div>
+                    <div class="controlcontent">
+                        <a href="/edit/<%= discuss.id%>">編集</a>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </body>
+</html>

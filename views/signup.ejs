@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>新規登録画面</title>
+    <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <main>
+            <div class="panel">
+                <h2>新規登録</h2>
+                <% if (errors.length > 0){ %>
+                    <ul class="errors">
+                        <%errors.forEach(error =>{ %>
+                            <li><%= error %></li>
+                        <% }); %>
+                    </ul>
+                <% } %>
+                <form action="/signup" method="POST">
+                    <p>お名前</p>
+                    <input type="text" name="username">
+                    <p>アルファベット＋学籍番号</p>
+                    <input type="text" name="number">
+                    <p>パスワード</p>
+                    <input type="password" name="password">
+                    <input type="submit" value="登録する">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

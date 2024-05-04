@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <div class="">
+            黒板投稿機能
+        </div>
+        <div class="">
+            <form action="/write" method="POST">
+            <p>発言者の学年</p>
+            <input type="text" name="rgrade">
+            <p>発言者の類</p>
+            <input type="text" name="rkind">
+            <p>発言者の氏名</p>
+            <input type="text" name="rname">
+            <p>発言内容</p>
+            <input type="text" name="rcontent">
+            <input type="submit" value="投稿する">
+            </form>
+        </div>
+    </body>
+</html>

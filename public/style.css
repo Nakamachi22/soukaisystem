@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*wrapper全体の見栄えバランス調整*/
+.wrapper{
+    margin: 5px;
+    padding:10px;
+}
+/*header*/
+.main-nav{
+    display: flex; 
+}
+.main-nav li{
+    margin-left: 24px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#fff, #b9d0b1);
+}
+/*役職別機能見栄え*/
+.list{
+    display: flex;
+    grid-template-columns: 250px 250px 250px;
+    gap: 50px;
+    
+}
+/*ユーザー登録画面*/
+.panel{
+    margin: 100px;
+    text-align: center;
+}
+
+/*発言投稿システム*/
+.memo-back{
+    background-color: #163c34;
+    writing-mode: vertical-rl;
+    margin:0 0 0 auto;
+}
+.memo-infoname{
+    font-size: 3rem;
+    color:#fff;
+    border-width:thick;
+    border-style: solid;
+    border-color: #fff; 
+}
+.memo-add{
+    color:#fff;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: #fff; 
+}
+.memo-addinfo{
+    color:#fff;
+    border-style: solid;
+    border-color: #fff; 
+}
+.memo-addwrite{
+    color:#fff;
+    border-style: solid;
+    border-color: #fff; 
+}
+/*投稿管理画面*/
+.controlscreen{
+    display:flex;
+    border-style:solid;
+    border-color: black;
+    margin:10px;
+
+}
+.controlinfo{
+    border-right: 2px solid black;
+    padding: 0px 5px;
+}
+.controlcontent{
+    margin-left:5px; 
+}
+/*議案選択画面*/
+.controlbill{
+    display: flex;
+}

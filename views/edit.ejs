@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>発言投稿編集画面</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <form action="/update/<%= discuss.id%>" method="post">
+            <input value="<%= discuss.rcontent %>" type="text" name="discussrcontent">
+            <input type="submit" value="更新する"> 
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>総会システム中村くん</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="panel">
+            <h2>ようこそ総会システム中村くんへ<br>こちらからログインをお願いします。</h2>
+            <form action="/login" method="POST">
+                <p>アルファベット＋学籍番号</p>
+                <input type="text" name="number">
+                <p>パスワード</p>
+                <input type="password" name="password">
+                <input type="submit" value="ログイン">
+            </form>
+        </div>
+        <div><a href="/signup">新規登録</a></div>
+    </body>
+</html>

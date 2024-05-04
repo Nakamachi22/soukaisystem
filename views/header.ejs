@@ -1,0 +1,17 @@
+<header>
+<div class="navbar wrapper" >
+    <div>
+    <a href="/">総会システム中村くん</a>
+    <p>ようこそ、<%= locals.username %>さん</p>
+    </div>
+    <ul class="main-nav">
+        <li><a href="/list">役職別機能</a></li>
+        <% if (isLoggedIn) { %>
+        <li><a href="/logout">ログアウト</a></li>
+        <% }else { %>
+        <li><a href="/">ログイン</a></li>
+        <li><a href="/signup">新規登録</a></li>
+        <% } %>
+    </ul>
+</div>
+</header>

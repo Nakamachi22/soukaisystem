@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>議案入力</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <div class="">
+            <h2>議案入力</h2>
+            <form action="/create"  method="POST">
+            <p>議案名</p>
+            <input type="text" name="billname">
+            <p>議案提出者名</p>
+            <input type="text" name="pname">
+            <p>学年</p>
+            <input type="text" name="pgrade">
+            <p>類</p>
+            <input type="text" name="pkind">
+            <input type="submit" value="作成する">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>議案選択</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%- include('header'); %>
+        <div class="">
+            <p>議案一覧</p>
+            <% bills.forEach((bill) => { %>
+            <div class="controlbill">
+                <div>
+                    <li><%= bill.billname %></li>
+                </div>
+                <div>
+                    <form action="/choose" method="post">
+                        <input type="submit" value="選択する">
+                    </form>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </body>
+</html>
